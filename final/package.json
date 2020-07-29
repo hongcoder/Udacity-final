@@ -1,0 +1,51 @@
+{
+  "name": "travep-app",
+  "version": "1.0.0",
+  "description": "## Project Five - Travel App (Front End Developer Udacity Nanodegree) #### What I used: HTML, CSS, Javascript (Vanilla)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/server/server.js",
+    "build-prod": "webpack --config webpack.prod.js",
+    "build-dev": "webpack-dev-server  --config webpack.dev.js --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "font-awesome-webpack": "0.0.5-beta.2",
+    "html-loader": "^1.1.0",
+    "jest": "^26.0.1",
+    "node-sass": "^4.14.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "babel-loader": "^8.1.0",
+    "babel-watch": "^7.0.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "core-js": "^3.6.5",
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "google-fonts-plugin": "^5.0.2",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.2",
+    "url-loader": "^4.1.0",
+    "webpack-dev-server": "^3.11.0",
+    "workbox-webpack-plugin": "^5.1.3"
+  }
+}

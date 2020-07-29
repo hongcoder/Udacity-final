@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Travel Anywhere</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <a href="#about">
+        <h2>Travel Anywhere</h2>
+      </a>
+      <ul class="navbar__menu">
+        <li class="navbar__list"><a href="#about">About</a></li>
+        <li class="navbar__list"><a href="#planner">Plan your trip</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!--first-->
+    <section id="about" class="section section__about">
+      <div class="map__wrapper">
+        <div class="about__map">
+          <h1 class="map__heading">Travel Anywhere</h1>
+          <h3 class="map__title">Your best travel planner</h3>
+          <a href="#" class="map__link">+PLAN YOUR TRIP</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- planner -->
+    <section id="planner" class="section section__planner">
+      <div class="container planner__form">
+        <div class="form__image section__image">
+          <img src="../media/airplane.png" alt="airplane">
+        </div>
+        <form class="form__content" id="form">
+          <h2 class="form__heading">Plan your trip</h2>
+          <input type="text" name="from" placeholder="leaving from..." autocomplete="off"
+            class="form__input input__from" required>
+          <input type="text" name="to" autocomplete="off" placeholder="Going to" class="form__input input__to" required>
+          <label for="date" class="date__label">Departing On...</label>
+          <input type="date" name="date" class="form__input input__date" required>
+          <input type="submit" value="Submit" name="submit" class="input__submit">
+        </form>
+      </div>
+    </section>
+
+    <!-- result -->
+
+    <section id="result" class="section section__result invisible">
+      <div class="container results">
+        <div class="result__image">
+          <img src="../media/flag.png" alt="flag" id="fromPixabay">
+        </div>
+        <div class="result__content">
+          <i class="city__icon icon__result fas fa-map-pin"></i>
+          <h2 class="city__name text__result">Your Trip to: <span id="city"></span></h2>
+          <i class="date__icon icon__result fas fa-calendar-day"></i>
+          <h2 class="date__name text__result">Departing On: <span id="date">DD/MM/YYYY</span></h2>
+
+          <i class="days__icon icon__result fas fa-suitcase-rolling"></i>
+          <h2 class="days__name text__result"><span id="days">NUM</span> days away</h2>
+
+          <i class="weather__icon icon__result fas fa-cloud-sun-rain"></i>
+          <h2 class="weather__name text__result">Forecast weather to be: <span id="temp">200C</span> &#176; F, <span
+              id="summary"></span>.</h2>
+
+          <a href="#" class="button button__delete" id="delete">Delete</a>
+          <a href="#" class="button button__save" id="save">Print</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- <footer class="footer">
+    <div class="footer__copyright">
+      <p class="copyright__text">All rights reserved ©</p>
+    </div>
+    <div class="footer__credits">
+      <div class="credits__flaticon">
+        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+          href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+      </div>
+      <div class="credits__freepik">Background vector created by Freepik from <a
+          href="https://www.freepik.com/free-photos-vectors/background">www.freepik.com </a></div>
+      <div class="credits__canva">Frame created by <a href="https://www.canva.com/marketplacedesigners">Marketplace
+          Designers</a></div>
+    </div>
+  </footer> -->
+
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js');
+      })
+    }
+  </script>
+</body>
+
+</html>
