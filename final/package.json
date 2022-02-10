@@ -21,7 +21,7 @@
     "font-awesome-webpack": "0.0.5-beta.2",
     "html-loader": "^1.1.0",
     "jest": "^26.0.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   },
